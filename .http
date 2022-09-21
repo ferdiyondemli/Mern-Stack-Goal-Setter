@@ -1,13 +1,15 @@
 GET http://localhost:5000/api/goals
- 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmIxNTFkZGYxMTE2MzU3MTU2MzY2NiIsImlhdCI6MTY2Mzc2NzgzNywiZXhwIjoxNjYzODU0MjM3fQ.B5Y65cGeT__V9hkOljvdBg4X37tNMjyP3xZ4oPi-7OY
 
 ###
 
 POST http://localhost:5000/api/goals
 content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmIxNTFkZGYxMTE2MzU3MTU2MzY2NiIsImlhdCI6MTY2Mzc2NzgzNywiZXhwIjoxNjYzODU0MjM3fQ.B5Y65cGeT__V9hkOljvdBg4X37tNMjyP3xZ4oPi-7OY
 
 {
-    "text": "learn Cookie:  stack fully"
+    "text": "secondy " 
+     
 }
 
 ###
@@ -22,3 +24,33 @@ content-type: application/json
 
 DELETE  http://localhost:5000/api/goals/632aebc253dca8e09747cfc8
 content-type: application/json
+
+
+
+###
+
+POST http://localhost:5000/api/users
+content-type: application/json
+
+{
+    "name": "lia",
+    "email":"lia@hotmail.com",
+    "password":"lia"
+}
+
+
+###
+
+POST http://localhost:5000/api/users/login
+content-type: application/json
+
+{
+    "email":"crazyjonny_1988@hotmail.com",
+        "password":"gelelim"
+
+}
+
+###
+
+GET http://localhost:5000/api/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmIxNTFkZGYxMTE2MzU3MTU2MzY2NiIsImlhdCI6MTY2Mzc2NzgzNywiZXhwIjoxNjYzODU0MjM3fQ.B5Y65cGeT__V9hkOljvdBg4X37tNMjyP3xZ4oPi-7OY
