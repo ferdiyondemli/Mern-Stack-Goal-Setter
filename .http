@@ -7,25 +7,18 @@ POST http://localhost:5000/api/goals
 content-type: application/json
 
 {
-    "texft": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+    "text": "learn Cookie:  stack fully"
 }
 
 ###
 
-PUT http://localhost:5000/api/goals/3524135241
+PUT http://localhost:5000/api/goals/632ae6e2c1b2ab50de2e1679
 content-type: application/json
 
 {
-    "name": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
-}
+    "text": "learn next fully updated"
+ }
 ###
 
-DELETE  http://localhost:5000/api/goals/3524135241
+DELETE  http://localhost:5000/api/goals/632aebc253dca8e09747cfc8
 content-type: application/json
-
-{
-    "name": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
-}
